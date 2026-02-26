@@ -1,14 +1,12 @@
-def soma(x, y):
-    if x > 10: 
-        return [10, 20]
-    return x + y
+# def imprimir(a, b, c):
+#     print(a, b, c)
 
+# imprimir(1, 2, 3)
+# imprimir(4, 5, 6)
+# imprimir('Roney', 0.4, True)
 
-# variavel = soma(1, 2)
-# variavel = int(1)
-# print(variavel)
+def saudacao(nome='Sem nome'):
+    print(f'Olá, {nome}!')
 
-soma1 = soma(2, 2)
-soma2 = soma(3, 3)
-print(soma1)
-print(soma2)
+saudacao('Roney Vila')
+saudacao('Ana Beatriz')

@@ -1,25 +1,7 @@
-# x, y, *resto = 1, 2, 3, 4
+def soma(x, y, z):
+    print(f'{x=} y={y} y={z}', '/', 'x + y + z = ', x + y + z)
 
-# print(x, y, resto)
+soma(1, 2, 3)
+soma(1, y=2, z= 5)
 
-# def soma(x, y):
-#     return x + y
-
-def soma(*args):
-    total = 0
-    for numero in args:
-        total += numero
-    return total
-
-soma_1_2_3 = soma(1, 2, 3)
-# print(soma_1_2_3)
-
-soma_4_5_6 = soma(4, 5, 6)
-# print(soma_4_5_6)
-
-numeros = 1, 2, 3, 4, 5, 6 ,7, 78, 10
-outra_soma = soma(1, 2, 3, 4, 5, 6 ,7, 78, 10)
-print(outra_soma)
-
-print(*numeros)
-# print(sum(1, 2, 3, 4, 5, 6 ,7, 78, 10))
+print(1, 2, 3, sep='-')

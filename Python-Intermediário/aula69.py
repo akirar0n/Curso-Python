@@ -1,16 +1,16 @@
-# Higher Order Functions
+x = 1
 
-def saudacao(msg, nome):
-    return f'{msg}, {nome}!'
+def escopo():
+    x = 10
 
-def executa(funcao, *args):
-    return funcao(*args)
+    def outra_func():
+        x = 11
+        y = 2
+        print(x, y)
+    
+    outra_func()
+    print(x)
 
-# v = executa()
-print(
-    executa(saudacao, 'Bom dia', 'Roney')
-)
-
-print(
-    executa(saudacao, 'Boa noite', 'Jorge')
-)
+print(x)
+escopo()
+print(x)

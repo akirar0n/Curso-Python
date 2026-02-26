@@ -1,22 +1,18 @@
-def multiplicar(*args):
-    total = 1
-    for numero in args:
-        total *= numero
-    return total
+def soma(x, y, z=0):
+    if z is not None:
+        print(f'{x=} {y=} {z=}', x + y + z)
+    else: 
+        print(f'{x=} {y=}', x + y)
 
-multiplicacao = multiplicar(1, 2, 3, 4, 5)
-print(multiplicacao)
+def divisao(a, b):
+    print(a / b)
 
-# ###################################################
-# ###################################################
+def multiplicacao(c, d):
+    print(c * d)
 
-def par_impar(numero):
-    multiplo_de_2 = numero % 2 == 0
+def subtracao(e, f):
+    print(e - f)
 
-    if multiplo_de_2:
-        return f'{numero} é par'
-    return f'{numero} é ímpar'
-    
-print(par_impar(2))
-print(par_impar(1))
-
+soma(1, 2)
+soma(10, 20, 0)
+divisao(0, 50)
