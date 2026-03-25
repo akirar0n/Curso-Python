@@ -1,4 +1,7 @@
 {
     "python.analysis.autoImportCompletions": true,
-    "python.envFile": "${workspaceFolder}/Aulas-Extras/.env"
+    "python.envFile": "${workspaceFolder}/.env",
+    "terminal.integrated.env.windows": {
+    "PYTHONPATH": "D:\\GitHub\\Curso-Python\\Aulas-Extras"
+}
 }

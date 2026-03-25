@@ -11,10 +11,9 @@
 # De nenhum escopo externo é possível usar algo de escopo interno.
 #
 ################################################################################
-import inspect
+import inspect         
 
 nome_global = "nome_global"
-
 
 def func_global() -> None:
     nome_enclosing = "nome_enclosing"  # Enclosing (Local)
@@ -26,7 +25,7 @@ def func_global() -> None:
 
         def func_mais_interna() -> None:
             nome_local = "nome_local"  # Local
-
+            
             get_legb("nome_enclosing", inspect.currentframe())
             print(
                 "LOCAL:",
