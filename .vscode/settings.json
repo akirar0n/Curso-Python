@@ -1,4 +1,4 @@
 {
     "python.analysis.autoImportCompletions": true,
-    "python.envFile": "${workspaceFolder}/.env"
+    "python.envFile": "${workspaceFolder}/Aulas-Extras/.env"
 }
