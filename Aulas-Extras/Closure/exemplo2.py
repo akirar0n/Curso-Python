@@ -12,7 +12,9 @@
 
 ################################################################################
 
-from utils import Logger
+from typing import Callable
+
+Logger = Callable[[str], None]
 
 def make_logger(name: str, color: str, icon: str = "…") -> Logger:
     def logger(log: str) -> None:

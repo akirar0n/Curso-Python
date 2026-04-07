@@ -3,5 +3,11 @@
     "python.envFile": "${workspaceFolder}/.env",
     "terminal.integrated.env.windows": {
     "PYTHONPATH": "D:\\GitHub\\Curso-Python\\Aulas-Extras"
-}
+},
+"python.analysis.extraPaths": [
+    "./venv/Lib/site-packages/python_",
+    "./Aulas-Extras/Closure/venv/Lib/python_",
+    "./Aulas-Extras/Closure/venv/Lib/python_"
+],
+"python-envs.defaultEnvManager": "ms-python.python:system"
 }
