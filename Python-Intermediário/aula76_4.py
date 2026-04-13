@@ -9,26 +9,17 @@
 # pop - Apaga um item com a chave especificada (del)
 # popitem - Apaga o último item adicionado
 # update - Atualiza um dicionário com outro
+import copy
 
-pessoa2 = {}
+d1 = {
+    'c1': 1,
+    'c2': 2,
+    'l1': [0, 1, 2],
+}
+d2 = d1.copy()
 
-# 
-# 
+d2['c1'] = 1000
+d2['l1'][1] = 999999
 
-chave2 = 'nome'
-
-pessoa2[chave2] = 'Roney'
-pessoa2['sobrenome'] = 'Vila'
-
-print(pessoa2[chave2])
-
-pessoa2[chave2] = 'Ana'
-
-del pessoa2['sobrenome']
-print(pessoa2)
-print(pessoa2['nome'])
-
-if pessoa2.get('sobrenome') is None:
-    print('Existe')
-else: 
-    print(pessoa2['sobrenome'])
+print(d1)
+print(d2)
